@@ -46,3 +46,25 @@ body {
   color: red;
   margin-top: 16px;
 }
+button{
+    border-radius: 20%;
+}
+.custom-shape-divider-top-1679622044 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1679622044 svg {
+    position: relative;
+    display: block;
+    width: calc(139% + 1.3px);
+    height: 343px;
+}
+
+.custom-shape-divider-top-1679622044 .shape-fill {
+    fill: #FFA500;
+}
