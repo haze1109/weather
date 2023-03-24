@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <style>
+      /* Set background color and text color */
+      body {
+        background-color: #f0f0f0;
+        color: #333;
+      }
+      
+      /* Center content vertically */
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      /* Style for weather card */
+      .card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        padding: 24px;
+        text-align: center;
+        width: 400px;
+      }
+      
+      /* Style for weather icon */
+      .icon {
+        font-size: 64px;
+        margin-bottom: 16px;
+      }
+      
+      /* Style for temperature and description */
+      .temp, .desc {
+        font-size: 32px;
+        margin-bottom: 16px;
+      }
+      
+      /* Style for result section */
+      .result {
+        display: none;
+        margin-top: 16px;
+      }
+      
+      /* Style for error message */
+      .error {
+        color: red;
+        margin-top: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <i class="icon"></i>
+        <p class="temp"></p>
+        <p class="desc"></p>
+        <form>
+          <label for="location">Enter a location:</label>
+          <input type="text" id="location" name="location" required>
+          <button type="submit">Get Weather</button>
+        </form>
+        <div class="result">
+          <h2>Weather for <span class="city"></span></h2>
+          <div class="weather-info">
+            <div class="icon"></div>
+            <div class="temp"></div>
+            <div class="desc"></div>
+          </div>
+        </div>
+        <div class="error"></div>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>
